@@ -3,6 +3,7 @@ local Executor=identifyexecutor();
 local SupportedExecutors={'Synapse X','ScriptWare','Krnl','Temple'};
 local Supported=table.find(SupportedExecutors,Executor)~=nil;
 assert(Supported,'Executor Not Supported');
+
 local Key={Beta1};
 local Password=Key[1];
 local DeveloperMode=Key[1]==nil;
